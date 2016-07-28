@@ -1,0 +1,125 @@
+﻿@charset "utf-8";
+*{
+	margin:0px;
+	padding: 0px;
+}
+html{
+    font-size:62.5%; 
+    font-family: '微软雅黑';
+}
+body{
+    font-size:12px;
+    background:#ccc; 
+    overflow: hidden;
+}
+p{
+    font-size:12px;
+    padding: 0;
+    margin: 0;
+}
+ul li {
+	list-style: none;
+}
+img,input,textarea{
+	border:0;
+	-webkit-appearance:none;
+	outline: none;
+	background: transparent;
+}
+.clear{clear:both;}
+a,i{
+	-webkit-tap-highlight-color:rgba(255,255,255,0);
+	text-decoration: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0; 
+}
+input{
+	border-radius: 0;
+}
+p{
+	font-size:12px;
+	transition: font-size .3s ease;
+	-webkit-transition: font-size .3s ease;
+	text-indent: 2em;
+}
+
+.clearfix:after, .clearfix:before {
+	display: table;
+    content: " ";
+}
+.clearfix:after{
+    clear:both;
+}
+.overflowH{
+	overflow: hidden;
+}
+
+#container{
+	width: 100%;
+    height: 100%;
+    max-width:640px;
+    position: relative;
+    overflow:hidden;
+    margin:0 auto;
+    background:#fff;
+}
+
+/**顶部**/
+.title{
+	height:50px;
+	background: #f6f6f6;
+	position: fixed;
+	top:0;
+	left:0;
+	right:0px;
+	width:100%;
+	max-width:640px;
+	margin:0 auto;
+}
+.colorLine{
+	display:block;
+    width: 100%;
+    height: 5px;
+    background-image:
+    linear-gradient(90deg, #FF3C2D 5%, transparent 0),
+    linear-gradient(90deg, #FFD300 15%, transparent 0),
+    linear-gradient(90deg, #8BC53F 30%, transparent 0),
+    linear-gradient(90deg, #FF3C2D 80%, transparent 0),
+    linear-gradient(90deg, #00ADEE 100%, transparent 0);
+}
+.navTab{
+	height:60px;
+	position: fixed;
+	width:100%;
+	background:#f1f2f3;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	max-width:640px;
+	margin:0 auto;
+	border-top:.7px #a0a0a0 solid;
+}
+.navTab>div{
+	width:33%;
+	float:left;
+	text-align: center;
+	color:#6e6e6e;
+}
+.navTab>div img{
+	padding-top:10px;
+}
+.tabAllKinds img{
+	width:30px;
+}
+.tabShopingCar img{
+	width:34.5px;
+}
+.tabOrder img{
+	width:23px;
+}
+.tab_active{
+	color:#FF3C2D;
+}

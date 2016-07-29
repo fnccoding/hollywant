@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/cmfOrder.css">
+    <title>确认订单</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="cmfHeader">
+            <span class="colorLine"></span>
+            <div class="backBtn" onclick="javascript:history.go(-1)"></div>
+            <div>确认订单</div>
+        </header>
+        <div class="content">
+            <section class="cusDetails">
+                <div>
+                    <span class="cusName">客户名称：上海联华超市长宁店</span>
+                    <span class="cusMobile">手机：15901676969</span>
+                    <span class="cusTel">电话：42341122</span>
+                    <span class="cusAddr">收货地址：上海上海长宁区淞虹路489号</span>
+                </div>
+            </section>
+            <div class="hr"></div>
+            <section class="itemList">
+                <div class="orderItem">
+                    <div class="oItemDetails">
+                        <div class="oItemLeft">
+                            <span class="oItemName">旺仔O泡果奶礼盒奶礼盒装</span>
+                            <span class="oItemSpec">123ml×6×4</span>
+                            <span class="oItemOptSum">数量</span>
+                            <span class="oItemPrice">￥54.00/箱</span>
+                            <div class="oItemOptList">
+                                <div class="OptListLine">
+                                    <span>12箱</span>
+                                    <span>蜜桃味</span>
+                                </div>
+                                <div class="OptListLine">
+                                    <span>100箱</span>
+                                    <span>奇异果味</span>
+                                </div>
+                                <div class="OptListLine">
+                                    <span>12箱</span>
+                                    <span>蜜桃味</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oSingleSum">
+                        <span>共213箱</span>
+                        <span>￥<span>11134</span>.00</span>
+                    </div>
+                </div>
+                <div class="orderItem">
+                    <div class="oItemDetails">
+                        <div class="oItemLeft">
+                            <span class="oItemName">旺旺蒟蒻果冻</span>
+                            <span class="oItemSpec">123ml×6×4</span>
+                            <span class="oItemOptSum">数量</span>
+                            <span class="oItemPrice">￥14.00/箱</span>
+                            <div class="oItemOptList">
+                                <div class="OptListLine">
+                                    <span>1箱</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="oSingleSum">
+                        <span>共1箱</span>
+                        <span>￥<span>14</span>.00</span>
+                    </div>
+                </div>
+                <form>
+                    <textarea name="cmfOrderText" id="cmfOrderText"></textarea>
+                </form>
+            </section>
+            <section class="cmfOrderSum">
+                <span>总数：215</span>
+                <span>小计：<span>￥<span>11374</span>.00</span>
+                </span>
+            </section>
+            <section class="cmfConfirm">
+                <div class="submitBtn" onclick="javascript:window.location.href='okOrder.html'">确认</div>
+            </section>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function(){
+            if($('#cmfOrderText').val() == ""){
+                $('#cmfOrderText').val('请输入订单备注 (非必填)').css({color: "#666"});
+            };
+            $('#cmfOrderText').focus(function(){
+                if($(this).val() == '请输入订单备注 (非必填)'){
+                    $(this).val('').css({ color: "#222" });
+                }
+            }).blur(function(){
+               if ($(this).val() == '') {
+                    $(this).val('请输入订单备注 (非必填)').css({ color: "#666" });
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

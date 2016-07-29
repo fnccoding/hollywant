@@ -53,7 +53,7 @@
 	float:left;
 }
 .checkBox img{
-	width:16px;
+	width:20px;
 	padding-top:10px;
 }
 .cartItemDetails{
@@ -159,7 +159,7 @@
 
 
 .cartFooter{
-	height:40px;
+	height:50px;
 	border-top:.7px #6e6e6e solid;
 	position: fixed;
 	width:100%;
@@ -177,7 +177,7 @@
 }
 .checkAllBox>div{
 	float:left;
-	line-height: 40px;
+	line-height: 50px;
 }
 .checkAllBox>div:nth-child(2){
 	margin-left:5px;
@@ -186,16 +186,16 @@
 	width:20px;
 }
 .checkAllImg img{
-	padding-top:10px;
+	padding-top:15px;
 	width:100%;
 }
 .cartCountPrice{
-	width:55%;
+	width:45%;
 	float:left;
 	text-align: right;
 	font-size:14px;
 	color:#fc2223;
-	line-height: 40px;
+	line-height: 50px;
 }
 .cartCountPrice span:nth-child(1){
 	color:#231f20;
@@ -204,14 +204,14 @@
 	font-size:18px;
 }
 .joinOrder{
-	width:25%;
+	width:35%;
 	float:right;
 	background:#FF3C2D;
 	color:#fff;
 	font-size:18px;
-	height:40px;
+	height:100%;
 	text-align: center;
-	line-height: 40px;
+	line-height: 50px;
 }
 
 
@@ -255,7 +255,7 @@
 .back img{
 	position: absolute;
 	left:4%;
-	width:3%;
+	width:15px;
 	top:15px;
 }
 .pageName{
@@ -271,7 +271,7 @@
 	right:4%;
 }
 .titleCart img{
-	width:100%;
+	width:30px;
 }
 .titleCart .titleCartNum{
 	width:15px;
@@ -287,6 +287,9 @@
 .detailsMain{
 	border-top:1px rgba(0,0,0,.3) solid;
 	margin-top:50px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height:calc(100% - 140px);
 }
 .productImg{
 	margin:20px auto;
@@ -320,7 +323,7 @@
 	border-bottom:#6e6e6e .7px solid;
 }
 .salesPromotion{
-	margin:5px 3%;
+	margin:5px 3% 0px 3%;
 	font-size:14px;
 }
 .promotionLogo{
@@ -340,8 +343,156 @@
 .productVolume{
 	float:left;
 	margin-left:3%;
+	line-height: 24px;
 }
 .productDetailesPrice{
 	float:right;
 	margin-right:3%;
+}
+.productDetailesPrice span{
+	font-size:16px;
+	color:#fc2223;
+}
+.productDetailesPrice .priceInt{
+	font-size:18px;
+}
+.productDetailesPrice .productUom{
+	
+}
+.tasteList ul li{
+	margin-top:15px;
+}
+.tasteName{
+	width:30%;
+	float:left;
+	margin-left:15%;
+	text-align:center;
+	font-size:16px;
+	line-height:35px;
+}
+.tasteNum{
+	width:50%;
+	float:left;
+	line-height:30px;
+	height:30px;
+}
+.tasteNum>div{
+	float:left;
+}
+.tasteNum .reduce{
+	width:30px;
+	height:30px;
+	display:block;
+	background:url(../images/ic_quantity_reduce.png) no-repeat;
+	background-size:100% 100%;
+	float:left;
+}
+.tasteNum .add{
+	width:30px;
+	height:30px;
+	display:block;
+	background:url(../images/ic_quantity_add.png) no-repeat;
+	background-size:100% 100%;
+	float:left;
+}
+.tasteNum .tasteNumInput{
+	width:50%;
+	border:1px #ff3c2d solid;
+	border-radius:5px;
+	display:block;
+	margin-left:-5px;
+	float:left;
+	margin:0 5px;
+}
+.tasteNum .tasteNumInput input{
+	text-indent: 10px;
+	width:100%;
+}
+.detailsFooter{
+	width:100%;
+	height:90px;
+	max-width: 640px;
+	position: fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:0 auto;
+}
+.detailsOnePrice{
+	line-height: 30px;
+	font-size:14px;
+	width:40%;
+	margin-left:3%;
+	float:left;
+}
+.detailsCountMoney{
+	width:54%;
+	margin-right:3%;
+	float:left;
+	text-align: right;
+	font-size:14px;
+}
+.detailsCountMoney span{
+	color:#FC2223;
+	
+}
+.detailsCountMoney span:nth-child(2){
+	font-size:18px;
+}
+.addCartOrBuy{
+	background:#f1f1f1;
+	margin-top:5px;
+	height:55px;
+	text-align: center;
+}
+.addCartOrBuy>div{
+	width:48%;
+	float:left;
+	position: relative;
+	height:100%;
+}
+.buyNow{
+	margin-right:4%;
+	text-align: right;
+}
+.addToCart{
+	
+}
+.addCartOrBuy a{
+	display:block;
+	float:left;
+	width:120px;
+	height:40px;
+	margin-top:8px;
+	border-radius:5px;
+	color:#fff;
+	text-align: center;
+	line-height: 40px;
+	font-size:16px;
+}
+a.buyNowBtn{
+	background:#8bc53f;
+	right:0;
+	position: absolute;
+}
+a.addToCartBtn{
+	background:#FC2223;
+}
+
+
+
+
+@media(max-width:320px){
+	.checkBox{
+		width:10%;
+	}
+	.cartItemDetails {
+    width: 87%;
+	}
+	.checkAllBox {
+	    width: 20%;
+	}
+	.joinOrder {
+	    width: 30%;
+	}
 }

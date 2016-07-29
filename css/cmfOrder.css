@@ -1,0 +1,346 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.cmfHeader,
+.okOrderHeader {
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    color: #FF3C2D;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    position: relative;
+    background: #F6F6F6;
+}
+
+.colorLine {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-image: linear-gradient(90deg, #FF3C2D 5%, transparent 0), linear-gradient(90deg, #FFD300 15%, transparent 0), linear-gradient(90deg, #8BC53F 30%, transparent 0), linear-gradient(90deg, #FF3C2D 80%, transparent 0), linear-gradient(90deg, #00ADEE 100%, transparent 0);
+}
+
+.cmfHeader div:nth-child(3),
+.okOrderHeader div:nth-child(3) {
+    height: 35px;
+    line-height: 35px;
+}
+
+.backBtn {
+    float: left;
+    width: 18px;
+    height: 18px;
+    background: url(../images/back.png) 0 0 no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 2.5%;
+    top: 18px;
+}
+
+.content {
+    height: calc(100% - 45px);
+}
+
+.itemList {
+    height: calc(100% - 181px);
+    overflow-y: scroll;
+}
+
+.cusDetails {
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+}
+
+.cusDetails div {
+    overflow: hidden;
+    width: calc(95% - 20px);
+    margin: 0 auto;
+}
+
+.cusDetails div span {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+}
+
+.cusName,
+.cusMobile,
+.cusAddr {
+    float: left;
+    clear: both;
+}
+
+.cusTel {
+    float: right;
+}
+
+.hr {
+    width: 100%;
+    height: 10px;
+    background: #F6F6F6;
+    border-bottom: 1px solid #ccc;
+}
+
+.itemList {
+    clear: both;
+}
+
+.orderItem {
+    width: 100%;
+}
+
+.oItemDetails {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.oItemLeft > span {
+    display: block;
+}
+
+.oItemLeft span {
+    height: 14px;
+    line-height: 14px;
+}
+
+.oItemOptSum {
+    float: left;
+    color: #FF3C2D;
+}
+
+.oItemPrice {
+    float: right;
+    margin-right: -5%;
+    margin-bottom: 3px;
+}
+
+.oItemOptList {
+    clear: both;
+}
+
+.OptListLine span:nth-child(1) {
+    display: inline-block;
+    width: 15%;
+    text-align: left;
+}
+
+.oSingleSum {
+    width: 100%;
+    height: 30px;
+    background: #F6F6F6;
+    border-top: 2px solid #e5e2e2;
+    border-bottom: 2px solid #e5e2e2;
+}
+
+.oItemName,
+.oSingleSum {
+    font-size: 14px;
+}
+
+.oSingleSum > span:nth-child(1),
+.cmfOrderSum > span:nth-child(1) {
+    display: block;
+    float: left;
+    margin-left: 10%;
+    height: 34px;
+    line-height: 34px;
+}
+
+.oSingleSum > span:nth-child(2),
+.cmfOrderSum > span:nth-child(2) {
+    display: block;
+    float: right;
+    margin-right: 6%;
+    color: #FF3C2D;
+    height: 34px;
+    line-height: 34px;
+}
+
+.oSingleSum > span:nth-child(2) > span,
+.cmfOrderSum > span:nth-child(2) > span {
+    font-size: 20px;
+}
+
+.itemList form {
+    overflow: hidden;
+    width: 100%;
+}
+
+#cmfOrderText {
+    display: block;
+    width: calc(90% - 10px);
+    min-height: 60px;
+    margin: 20px auto;
+    padding: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+.cmfOrderSum {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    border-top: 2px solid #e5e2e2;
+}
+
+.cmfOrderSum > span:nth-child(1),
+.cmfOrderSum > span:nth-child(2) > span {
+    height: 40px;
+    line-height: 40px;
+}
+
+.cmfConfirm {
+    width: 100%;
+    height: 45px;
+    background: #F6F6F6;
+}
+
+.cmfConfirm {
+    padding-top: 15px;
+}
+
+.submitBtn {
+    width: 30%;
+    height: 30px;
+    margin: 0 auto;
+    background: #FF3C2D;
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+/*提交成功*/
+
+.okOrderContent {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.okOrderContent div:nth-child(1) {
+    color: #FF3C2D;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.okOrderContent div:nth-child(2) {
+    color: #6E6E6E;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.okOrderContent div:nth-child(2) span {
+    color: #FF3C2D;
+}
+
+.okOrderContent img:nth-child(3),
+.okOrderContent img:nth-child(6) {
+    display: block;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.okOrderContent div:nth-child(4) {
+    width: 30%;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px auto 20px;
+    background: #FF3C2D;
+    border-radius: 5px;
+}
+
+.okOrderContent div:nth-child(4) a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.okOrderContent p:nth-child(5) {
+    color: #6E6E6E;
+    font-size: 16px;
+    text-indent: 0;
+}
+
+.okOrderContent img:nth-child(6) {
+    width: 70%;
+    margin: 10px auto;
+}
+
+
+/* 滚动条滑块 */
+
+
+/*
+::-webkit-scrollbar {
+    position: absolute;
+    right: 0;
+    width: 10px;
+    z-index: 10;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #f6f3f3;
+    opacity: 0.3;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #ccc;
+    opacity: 0.3;
+}*/
+
+@media screen and (min-width:640px) {
+    .wrapper {
+        font-size: 16px;
+    }
+    .cmfHeader {
+        font-size: 20px;
+    }
+    .cusDetails {
+        height: 72px;
+    }
+    .cusDetails div span {
+        display: block;
+        height: 24px;
+        line-height: 24px;
+    }
+    .itemList {
+        height: calc(100% - 194px);
+    }
+    .oItemName,
+    .oSingleSum {
+        font-size: 18px;
+    }
+    .oItemLeft span {
+        height: 18px;
+        line-height: 18px;
+    }
+    .oSingleSum > span:nth-child(2) > span,
+    .cmfOrderSum > span:nth-child(2) > span {
+        font-size: 22px;
+    }
+}
